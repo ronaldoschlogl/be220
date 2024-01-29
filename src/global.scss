@@ -24,3 +24,47 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+
+
+html,
+body {
+  height: 100%;
+  max-width: 400px;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+ion-header ion-toolbar:first-of-type {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 3%;
+}
+
+ion-icon {
+    color: var(--be-orange) !important;
+}
+
+ion-buttons {
+    ion-button {
+        --background: var(--be-icon-button) !important;
+    }
+}
+
+.logo-icon {
+    width: 100px;
+    height: 50px;
+}
