@@ -1,0 +1,12 @@
+<ion-item id="usuario">
+  <ion-avatar slot="start">
+    <img [src]="user.avatar" />
+  </ion-avatar>
+  <ion-label [ngSwitch]="user.level">
+    <h1>{{user.name}}</h1>
+    <p class="nivel-roxo" *ngSwitchCase="5">Nível Roxo</p>
+    <p class="nivel-verde" *ngSwitchCase="3">Nível Verde</p>
+    <p class="nivel-azul" *ngSwitchCase="1">Nível Azul</p>
+    <p class="nivel-default" *ngSwitchDefault>Nível Padrão</p>
+  </ion-label>
+</ion-item>

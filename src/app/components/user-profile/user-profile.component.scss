@@ -1,0 +1,37 @@
+#usuario {
+    --background: transparent;
+    margin-left: 15px;
+
+    ion-avatar {
+        height: 50px;
+        width: 50px;
+        --border-radius: 50%;
+    }
+
+    ion-label {
+        h1 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+
+        .nivel-roxo {
+            color: purple;
+        }
+
+        .nivel-verde {
+            color: green;
+        }
+
+        .nivel-azul {
+            color: blue;
+        }
+
+        .nivel-default {
+            color: gray
+        }
+
+    }
+}
