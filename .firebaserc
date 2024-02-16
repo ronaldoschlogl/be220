@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "be220-640a2": {
+      "hosting": {
+        "app": [
+          "be220-640a2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "be220-640a2"
+  }
+}

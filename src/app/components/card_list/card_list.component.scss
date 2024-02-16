@@ -1,0 +1,99 @@
+#slider {
+    margin-top: 5%;
+    border-radius: 5px;
+
+    ion-label {
+        margin-left: 13%;
+        text-transform: uppercase;
+
+        ion-badge {
+            --background: var(--be-orange);
+            --color: #fff;
+            border-radius: 10px;
+            font-size: 7px;
+        }
+
+        ion-icon {
+            font-size: 7px;
+            padding: 3px;
+            border: 1px solid var(--be-orange);
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+    }
+
+    swiper-container {
+        swiper-slide {
+            ion-card {
+                margin-top: 3%;
+                margin-right: 0;
+                margin-bottom: 3%;
+                margin-left: 0;
+                max-height: 150px;
+                max-width: 400px;
+                width: 100%;
+                position: relative;
+                text-align: start;
+                justify-content: center;
+                border-radius: 30px;
+
+            }
+
+            img {
+                width: 100%;
+                height: 150px;
+                filter: grayscale(100%);
+            }
+
+            #novo-treino {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+                ion-card-title {
+                    vertical-align: middle;
+                    text-align: center;
+                    position: absolute;
+                    font-size: 2.0em;
+                    width: 70%;
+                    font-weight: bold;
+                    color: #fff;
+                    text-wrap: wrap;
+
+                    ion-icon {
+                        margin-right: 3px;
+                        font-size: 21px;
+                        padding: 3px;
+                        border: 3px solid #fff;
+                        border-radius: 50%;
+                        color: #fff !important;
+                    }
+                }
+            }
+
+            ion-card:not(#novo-treino) ion-card-title {
+                position: absolute;
+                font-weight: bold;
+                color: #fff;
+                text-wrap: pretty;
+
+                bottom: 10%;
+                top: auto;
+                margin-left: 10%;
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+
+            ion-card:not(#novo-treino) ion-card-subtitle {
+                font-size: 0.7em;
+                position: absolute;
+                bottom: 20%;
+                width: 100%;
+                color: var(--be-orange);
+
+                margin-left: 10%;
+                text-transform: lowercase;
+            }
+        }
+    }
+}

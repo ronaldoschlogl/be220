@@ -1,0 +1,19 @@
+ion-menu-button {
+    color: var(--be-white);
+}
+
+#notificacao {
+    --overflow: visible;
+  
+    ion-badge {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      z-index: 99;
+      position: absolute;
+      top: -7px;
+      right: -7px;
+      display: block;
+      background-color: var(--be-notification);
+    }
+  }
