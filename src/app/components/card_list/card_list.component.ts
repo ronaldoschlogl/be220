@@ -22,8 +22,6 @@ export class CardListComponent implements OnInit {
     if(this.newExercise){
       this.list.unshift(new Program('Novo Treino', false, '././assets/academia3.jpg'))
     }
-
-    console.log(this.list)
   }
 
 }

@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-item>
+    <ion-input labelPlacement="floating" placeholder="Email" label="Email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input labelPlacement="floating" placeholder="Senha" label="Senha" type="password"  [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="login()" shape="round">Login</ion-button>
+</ion-content>
