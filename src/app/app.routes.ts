@@ -1,4 +1,4 @@
-import { Auth } from '@angular/fire/auth';
+
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -14,7 +14,6 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-    providers: [Auth],
     loadComponent: () =>
       import('./pages/login/login.page').then(m => m.LoginPage)
   },

@@ -5,7 +5,7 @@ import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalo
 
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
-import { environment } from './environments/environment';
+import { environment } from './environments/environment.prod';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
@@ -22,7 +22,7 @@ bootstrapApplication(AppComponent, {
     provideIonicAngular(),
     provideRouter(routes),
     importProvidersFrom(
-      provideFirebaseApp(() => initializeApp({ "projectId": "be220-640a2", "appId": "1:280610773202:web:0b1a2eee5a8ffc7858750b", "storageBucket": "be220-640a2.appspot.com", "apiKey": "AIzaSyCQmpcdXLdkeZ0SZ5Llt_jr2OsEg8Br3bQ", "authDomain": "be220-640a2.firebaseapp.com", "messagingSenderId": "280610773202" }))),
+      provideFirebaseApp(() => initializeApp(environment.firebaseConfig))),
     //importProvidersFrom(provideAuth(() => getAuth())), 
     importProvidersFrom(provideFirestore(() => getFirestore())),
   ],

@@ -72,3 +72,6 @@ android
 .firebase
 *-debug.log
 .runtimeconfig.json
+
+
+src/app/environments/environment.prod.ts

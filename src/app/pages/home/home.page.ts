@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IonThumbnail, IonHeader, IonToolbar, IonButtons, IonButton, IonMenuButton, IonTitle, IonContent, IonIcon, IonBadge, IonAvatar, IonLabel, IonItem, IonChip, LoadingController } from '@ionic/angular/standalone';
+import { IonThumbnail, IonHeader, IonToolbar, IonButtons, IonButton, IonMenuButton, IonTitle, IonContent, IonIcon, IonBadge, IonAvatar, IonLabel, IonItem, IonChip, LoadingController, IonModal } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { notifications, accessibility, trophy, add } from 'ionicons/icons';
 import { HeaderComponent } from 'src/app/components/header/header.component';
-import { UserProfileComponent } from 'src/app/components/user-profile/user-profile.component';
+import { UserProfileComponent } from 'src/app/components/user_profile/user-profile.component';
 import { register } from 'swiper/element/bundle';
 import { CardListComponent } from 'src/app/components/card_list/card_list.component';
 import { Program } from 'src/app/models/programs';
@@ -18,7 +18,7 @@ register();
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [HeaderComponent, UserProfileComponent, CardListComponent, CommonModule, IonChip, IonItem, IonLabel, IonAvatar, IonThumbnail, IonBadge, IonButton, IonIcon, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent],
+  imports: [HeaderComponent, UserProfileComponent, CardListComponent, CommonModule, IonChip, IonItem, IonLabel, IonAvatar, IonThumbnail, IonBadge, IonButton, IonIcon, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonModal],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomePage implements OnInit {

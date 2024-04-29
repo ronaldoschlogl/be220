@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonLabel, IonItem, IonInput, IonButton, LoadingController } from '@ionic/angular/standalone';
+import { IonContent,IonButtons, IonLabel, IonItem, IonInput, IonButton, LoadingController } from '@ionic/angular/standalone';
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
-import { Auth, signInWithEmailAndPassword } from '@angular/fire/auth';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -17,7 +16,7 @@ export class LoginPage implements OnInit {
   public email = '';
   public password = '';
   constructor(
-    private auth: Auth,
+    private auth: AuthService,
     private loadingController: LoadingController,
     private router: Router,) { }
 
@@ -34,7 +33,7 @@ export class LoginPage implements OnInit {
       //   this.router.navigate(['/home'])
       // }
       //);
-      const login = await signInWithEmailAndPassword(this.auth, this.email, this.password)
+      const login = await this.auth.login(this.email, this.password)
     } catch (e) {
       console.error(e);
     } finally {
